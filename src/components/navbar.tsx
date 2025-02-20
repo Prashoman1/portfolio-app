@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Navbar as HeroUINavbar,
   NavbarContent,
@@ -15,16 +16,18 @@ import { link as linkStyles } from "@heroui/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
 
-import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
+import Logo from "../../public/images/logo.png";
+
+import { siteConfig } from "../config/site";
+import { ThemeSwitch } from "../components/theme-switch";
 import {
   TwitterIcon,
   GithubIcon,
   DiscordIcon,
   HeartFilledIcon,
   SearchIcon,
-  Logo,
-} from "@/components/icons";
+} from "../components/icons";
+import Image from "next/image";
 
 export const Navbar = () => {
   const searchInput = (
@@ -53,7 +56,13 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Logo />
+            <Image
+              src={Logo}
+              alt="Prashoman"
+              width={40}
+              height={40}
+              className="w-[100px] h-[50px]"
+            />
             <p className="font-bold text-inherit">ACME</p>
           </NextLink>
         </NavbarBrand>
@@ -63,7 +72,7 @@ export const Navbar = () => {
               <NextLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
+                  "data-[active=true]:text-primary data-[active=true]:font-medium"
                 )}
                 color="foreground"
                 href={item.href}
