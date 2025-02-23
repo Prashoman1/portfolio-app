@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import { Metadata, Viewport } from "next";
 
-
+import { ToastContainer, Zoom } from "react-toastify";
 import { siteConfig } from "../config/site";
 
 import React from "react";
@@ -39,7 +39,21 @@ export default function RootLayout({
       //   fontSans.variable
       // )}
       >
+        
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+        <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"
+            transition={Zoom}
+          />
           <main>{children}</main>
         </Providers>
       </body>

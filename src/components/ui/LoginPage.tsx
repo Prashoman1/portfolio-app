@@ -2,8 +2,13 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { LoginApi } from "../../services/authApi";
+import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
+
 
 export default function LoginPage() {
+  const router = useRouter();
   const [formValues, setFormValues] = useState({
     email: "",
     password: "",
@@ -12,6 +17,25 @@ export default function LoginPage() {
   const handleSubmit = async(e: React.FormEvent) => {
     e.preventDefault();
     console.log({ formValues });
+
+    try {
+      const loginInfo={
+        email: formValues.email,
+        password: formValues.password
+      }
+      const res = await LoginApi(loginInfo);
+      if(res.success){
+        router.push("/Dashboard");
+        toast.success(res?.message)
+      }else{
+        toast.error(res?.message)
+      }
+      // console.log(res);
+      
+    } catch (error) {
+      console.log(error);
+      
+    }
   };
 
   return (

@@ -6,7 +6,7 @@ import { FaDownload } from "react-icons/fa";
 export default function About() {
   return (
     <section
-      className="flex flex-col items-center justify-center min-h-screen px-6 md:px-20 bg-gray-100 dark:bg-gray-900 relative"
+      className="flex flex-col items-center justify-center min-h-screen px-6 md:px-20 bg-gray-100 dark:bg-gray-900 relative py-10"
       id="about"
     >
       {/* Image Section */}
@@ -34,6 +34,7 @@ export default function About() {
         <h1 className="text-3xl md:text-5xl font-bold text-gray-800 dark:text-white">
           Hi, I'm <span className="text-blue-500">Prashoman Chakrabrti</span>
         </h1>
+        <div className="flex items-center justify-center  mt-3">
         <motion.p
           animate={{ opacity: 1 }}
           className="text-gray-600 dark:text-gray-300 mt-3 max-w-md text-center"
@@ -56,6 +57,7 @@ export default function About() {
           </strong>{" "}
           specializing in modern web technologies.
         </motion.p>
+        </div>
 
         {/* Resume Button */}
         <div className="flex items-center justify-center">
@@ -74,37 +76,31 @@ export default function About() {
         alt="JavaScript"
         animate={{ y: [0, -10, 0] }}
         className="w-12 h-12 absolute left-[20%] top-[10%]"
-        src="/images/javascript.svg" // Replace with actual path to JS icon
+        src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" // Replace with actual path to JS icon
         transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
       />
       <motion.img
-        alt="Node.js"
+        alt="Next js"
         animate={{ y: [0, -10, 0] }}
         className="w-12 h-12 absolute left-[20%] top-[40%]"
-        src="/images/nodejs.svg" // Replace with actual path to Node.js icon
+        src="https://i.ibb.co.com/ymDNcD61/nextjs-icon-dark-background.png" // Replace with actual path to Node.js icon
         transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
       />
       <motion.img
         alt="React.js"
         animate={{ y: [0, -10, 0] }}
         className="w-12 h-12 absolute right-[20%] top-[10%]"
-        src="/images/react.svg" // Replace with actual path to React.js icon
+        src="https://i.ibb.co.com/WWmNSp7t/images-2.png" // Replace with actual path to React.js icon
         transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
       />
       <motion.img
-        alt="PostgreSQL"
+        alt="Redux"
         animate={{ y: [0, -10, 0] }}
         className="w-12 h-12 absolute right-[20%] top-[40%]"
-        src="/images/postgresql.svg" // Replace with actual path to PostgreSQL icon
+        src="https://i.ibb.co.com/0Rzny2Mj/images-1.png" // Replace with actual path to PostgreSQL icon
         transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
       />
-      <motion.img
-        alt="MongoDB"
-        animate={{ y: [0, -10, 0] }}
-        className="w-12 h-12"
-        src="/images/mongodb.svg" // Replace with actual path to MongoDB icon
-        transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-      />
+      
     </section>
   );
 }
