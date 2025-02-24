@@ -5,29 +5,22 @@ import { motion } from "framer-motion";
 const experiences = [
   {
     role: "Full Stack Developer",
-    company: "TechCorp",
+    company: "Mysoftheven (BD) LTD",
     duration: "Jan 2023 - Present",
-    description: "Developing and maintaining full-stack applications using React, Next.js, Node.js, and MongoDB.",
+    description: `Now employed as a Full Stack Developer, specializing in API integrations and frontend technologies. The following are among my duties: 
+Frontend Technologies: Using Next.js coding guidelines while creating and managing applications with React, Next.js, Tailwind CSS, Bootstrap, Redux, Context API, and TypeScript. Database.
+Backend: Using MongoDB, MySQL, and Laravel (REST API) for server-side logic and data storage. 
+Data Fetching: Using Axios and React Query (TanStack Query) to implement effective data fetching strategies. Developing intuitive user interfaces, guaranteeing peak performance, and overseeing scalable frontend and backend system integrations are some of the main contributions.`,
   },
-  {
-    role: "Frontend Developer",
-    company: "Web Solutions",
-    duration: "June 2021 - Dec 2022",
-    description: "Built responsive UIs with React, Tailwind, and Redux, optimizing performance and user experience.",
-  },
-  {
-    role: "Junior Developer",
-    company: "Startup XYZ",
-    duration: "Jan 2020 - May 2021",
-    description: "Assisted in developing web applications, focusing on API integrations and frontend improvements.",
-  },
+  
+  
 ];
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-16 bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <section id="experience" className="py-16 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
       <div className="container mx-auto px-6">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-center items-center">
           <h2 className="text-4xl font-bold text-center mb-10">Experience</h2>
           
         </div>
@@ -55,7 +48,7 @@ export default function ExperienceSection() {
               <div className="absolute -left-7 w-5 h-5 bg-blue-500 rounded-full border-4 border-white dark:border-gray-900"></div>
 
               {/* Experience Card */}
-              <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow-lg transition-colors duration-300">
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg transition-colors duration-300">
                 <h3 className="text-xl font-semibold">{exp.role}</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400">{exp.company} | {exp.duration}</p>
                 <p className="mt-2 text-gray-700 dark:text-gray-300">{exp.description}</p>

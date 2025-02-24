@@ -4,20 +4,19 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const skills = [
-  { name: "HTML", img: "/icons/html.svg" },
-  { name: "CSS", img: "/icons/css.svg" },
-  { name: "Tailwind", img: "/icons/tailwind.svg" },
+  { name: "HTML", img: "https://i.ibb.co.com/GQbPXdb7/html.jpg"},
+  { name: "CSS", img: "https://i.ibb.co.com/xKp2Gchr/css.png" },
+  { name: "Tailwind", img: "https://i.ibb.co.com/JwJ3kYvx/tailwind.png" },
   { name: "JavaScript", img: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png" },
   { name: "React", img: "https://i.ibb.co.com/WWmNSp7t/images-2.png" },
   { name: "Next js", img: "https://i.ibb.co.com/ymDNcD61/nextjs-icon-dark-background.png" },
   { name: "Redux", img: "https://i.ibb.co.com/0Rzny2Mj/images-1.png" },
-  { name: "MongoDB", img: "/icons/mongodb.svg" },
-  { name: "Mongoose", img: "/icons/mongoose.svg" },
-  { name: "Express", img: "/icons/express.svg" },
-  { name: "Node.js", img: "/icons/nodejs.svg" },
-  { name: "Prisma", img: "/icons/prisma.svg" },
-  { name: "PostgreSQL", img: "/icons/postgres.svg" },
-  { name: "Redis", img: "/icons/redis.svg" },
+  { name: "MongoDB", img: "https://i.ibb.co.com/99jXXNP6/mongodb.png" },
+  { name: "Mongoose", img: "https://i.ibb.co.com/zTD6wfBg/mongoose.png" },
+  { name: "Express", img: "https://i.ibb.co.com/Ngr0L8qG/express.png" },
+  { name: "Node.js", img: "https://i.ibb.co.com/QjKKyWkP/node.png" },
+  { name: "Prisma", img: "https://i.ibb.co.com/hFyd2mrt/prisma.png" },
+  { name: "PostgreSQL", img: "https://i.ibb.co.com/hzVr0gq/postgress.png" },
 ];
 
 export default function SkillsSection() {

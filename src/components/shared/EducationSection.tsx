@@ -5,15 +5,15 @@ import { motion } from "framer-motion";
 const education = [
   {
     degree: "Bachelor of Computer Science",
-    institution: "Tech University",
-    duration: "2018 - 2022",
-    description: "Focused on software development, algorithms, and data structures.",
+    institution: "Green University of Bangladesh",
+    duration: "2022 - 2026",
+    description: "Focused on software development, algorithms, and data structures. And also learned about ML, AI, and IoT.",
   },
   {
-    degree: "Full Stack Web Development",
-    institution: "Dev Academy",
-    duration: "2023 - Present",
-    description: "Learning the latest in full-stack technologies including React, Node.js, and MongoDB.",
+    degree: "Diploma of Computer Technology",
+    institution: "Comilla Polytechnic Institute",
+    duration: "2017 - 2021",
+    description: "Learning the latest in full-stack technologies including React, Node.js, and MongoDB. And with Online Problem solving in various online platforms.",
   },
 ];
 
