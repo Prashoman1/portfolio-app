@@ -3,6 +3,7 @@
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import IconSection from "./IconSection"
 
 export default function Footer() {
   return (
@@ -31,24 +32,11 @@ export default function Footer() {
           </div>
 
           {/* Social Media Icons */}
-          <div className="flex justify-center gap-6 my-6">
-            <Link href="https://github.com/username" target="_blank" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
-              <FaGithub size={24} />
-            </Link>
-            <Link href="https://www.linkedin.com/in/yourprofile" target="_blank" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
-              <FaLinkedin size={24} />
-            </Link>
-            <Link href="https://twitter.com/yourhandle" target="_blank" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
-              <FaTwitter size={24} />
-            </Link>
-            <Link href="mailto:youremail@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
-              <FaEnvelope size={24} />
-            </Link>
-          </div>
+            <IconSection/>
 
           {/* Copyright Section */}
           <div className="text-sm text-gray-500 dark:text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Prashoman Chakrabarti. All rights reserved.</p>
           </div>
         </motion.div>
       </div>

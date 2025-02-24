@@ -18,7 +18,7 @@ Data Fetching: Using Axios and React Query (TanStack Query) to implement effecti
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-16 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <section id="experience" className="py-5 lg:py-10 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
       <div className="container mx-auto px-6">
         <div className="flex justify-center items-center">
           <h2 className="text-4xl font-bold text-center mb-10">Experience</h2>

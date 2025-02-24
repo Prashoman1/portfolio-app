@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Prashoman's Portfolio",
+  description: "A personal portfolio website showcasing my skills, projects, and achievements. Built with React, Tailwind CSS, and Framer Motion. Hosted on Vercel. Optimized for performance, accessibility, and SEO. Dark mode is available. Feel free to use this template for your portfolio. Don't forget to give it a star on GitHub if you like it. Thank you! 🚀",
   navItems: [
     {
       label: "Home",
@@ -31,40 +31,6 @@ export const siteConfig = {
     {
       label: "Contact Us",
       href: "#contact",
-    },
-  ],
-  navMenuItems: [
-    {
-      label: "Profile",
-      href: "/profile",
-    },
-    {
-      label: "Dashboard",
-      href: "/dashboard",
-    },
-    {
-      label: "Projects",
-      href: "/projects",
-    },
-    {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
     },
   ],
   links: {

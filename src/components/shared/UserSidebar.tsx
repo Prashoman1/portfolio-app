@@ -30,10 +30,10 @@ const UserSidebar = () => {
               activePaths={["/Dashboard/about"]}
             />
             <SidebarLink
-              href="/Dashboard/admin/tag"
+              href="/Dashboard/skills"
               icon={FiTag}
-              label="Tags"
-              activePaths={["/Dashboard/admin/tag"]}
+              label="skills"
+              activePaths={["/Dashboard/skills"]}
             />
 
             <SidebarLink

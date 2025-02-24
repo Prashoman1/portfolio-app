@@ -21,43 +21,44 @@ const AboutList = () => {
           className="space-y-4"
         >
           <Input
+            className=""
             name="title"
+            onChange={(e: any) =>
+              setFormData({ ...formData, title: e.target.value })
+            }
             placeholder="Title"
             value={formData.title}
-            onchange={(e: any) =>
-              setFormData({ ...formData, title: e.target.value })
-            }
-            className=""
           />
           <Input
+            className=""
             name="subtitle"
-            placeholder="Subtitle"
-            value={formData.subtitle}
-            onchange={(e: any) =>
+            onChange={(e: any) =>
               setFormData({ ...formData, subtitle: e.target.value })
             }
-            className=""
+            placeholder="Subtitle"
+            value={formData.subtitle}
           />
           <Input
+            className=""
             name="image"
-            type="file"
-            placeholder="Image"
-            
-            value={formData.title}
-            onchange={(e: any) =>
+            onChange={(e: any) =>
               setFormData({ ...formData, title: e.target.value })
             }
-            className=""
+            placeholder="Image"
+            type="file"
+            value={formData.title}
           />
           <Textarea
             name="description"
-            placeholder="Description"
-            value={formData.description}
-            onchange={(e: any) =>
+            className=""
+            onChange={(e: any) =>
               setFormData({ ...formData, description: e.target.value })
             }
-            className=""
-          />
+            placeholder="Description"
+            value={formData.description}
+
+            />
+            
 
           <div className="space-y-2">
             <label htmlFor="socialLinks" className="block text-sm font-medium">
@@ -67,10 +68,9 @@ const AboutList = () => {
               <div key={index} className="flex space-x-2">
                 <Input
                   id={`socialName${index}`}
+                  className=""
                   name="name"
-                  placeholder="Platform"
-                  value={social.name}
-                  onchange={(e: any) => {
+                  onChange={(e: any) => {
                     setFormData({
                       ...formData,
                       socials: formData.socials.map((s, i) =>
@@ -78,7 +78,8 @@ const AboutList = () => {
                       ),
                     });
                   }}
-                  className=""
+                  placeholder="Platform"
+                  value={social.name}
                 />
               </div>
             ))}

@@ -29,6 +29,7 @@ import {
   SearchIcon,
 } from "../components/icons";
 import Image from "next/image";
+import IconSection from "./shared/IconSection";
 
 export const Navbar = () => {
   return (
@@ -65,45 +66,35 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <Link href="https://www.linkedin.com/in/prashoman/" isExternal aria-label="LinkedIn">
-          <FaLinkedin />
-        </Link>
-        <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
-        </Link>
+        <IconSection/>
         <ThemeSwitch />
         
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
-        </Link>
+        
         <ThemeSwitch />
         <NavbarMenuToggle />
       </NavbarContent>
 
       <NavbarMenu>
        
-        {/* <div className="mx-4 mt-2 flex flex-col gap-2">
-          {siteConfig.navMenuItems.map((item, index) => (
+        <div className="mx-4 mt-2 flex flex-col gap-2">
+          {siteConfig?.navItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                }
-                href="#"
+                <Link
+                color="foreground"
+                href={item.href}
                 size="lg"
-              >
+                >
                 {item.label}
-              </Link>
+                </Link>
             </NavbarMenuItem>
           ))}
-        </div> */}
+        </div>
+        <div className="flex flex-col gap-2">
+          <IconSection/>
+        </div>
       </NavbarMenu>
     </HeroUINavbar>
   );

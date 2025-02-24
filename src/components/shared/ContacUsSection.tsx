@@ -22,7 +22,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-16 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <section id="contact" className="py-5 lg:py-10 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold mb-10">Contact Me</h2>
 
@@ -45,10 +45,10 @@ export default function ContactSection() {
             <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
             <p className="text-sm mb-4">Feel free to contact me through any of the following channels:</p>
             <div className="space-y-2">
-              <Link href="tel:+1234567890" className="block text-blue-500 dark:text-blue-400 hover:underline">📞 +123 456 7890</Link>
-              <Link href="mailto:youremail@gmail.com" className="block text-blue-500 dark:text-blue-400 hover:underline">📧 youremail@gmail.com</Link>
-              <Link href="https://wa.me/1234567890" target="_blank" className="block text-blue-500 dark:text-blue-400 hover:underline">💬 WhatsApp</Link>
-              <Link href="https://www.linkedin.com/in/yourprofile" target="_blank" className="block text-blue-500 dark:text-blue-400 hover:underline">🔗 LinkedIn</Link>
+              <Link href="tel:+8801940617911" className="block text-blue-500 dark:text-blue-400 hover:underline">📞 +8801940617911</Link>
+              <Link href="mailto:prashomanchakrabarti1@gmail.com" className="block text-blue-500 dark:text-blue-400 hover:underline">📧 prashomanchakrabarti1@gmail.com</Link>
+              <Link href="https://wa.me/01940617911" target="_blank" className="block text-blue-500 dark:text-blue-400 hover:underline">💬 WhatsApp</Link>
+              <Link href="https://www.linkedin.com/in/prashoman-chakrabarti" target="_blank" className="block text-blue-500 dark:text-blue-400 hover:underline">🔗 LinkedIn</Link>
             </div>
           </div>
 
