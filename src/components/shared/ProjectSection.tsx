@@ -39,6 +39,21 @@ const projects = [
       "https://github.com/Prashoman/facility-booking-platform-forntend",
     backendLink: "https://github.com/Prashoman/sports-facility-booking-backend",
   },
+  {
+    title: "Bangladesh Govt. Service Portal",
+    description: `This is Microservice Application.A web-based platform that citizen can purchase the government service and pay the bill. The system provides real-time availability, secure payment options, and user-friendly scheduling.There are many services available in this platform. for example, voice to text, spell checker, pdf to voice etc.`,
+    image:
+      "https://i.ibb.co.com/qqxsyND/service-bangla-gov-bd-1.png",
+    stack: [
+      "Next Js",
+      "Redux",
+      "TypeScript",
+      "Laravel",
+      "Mysql"
+    ],
+    liveLink: "https://service.bangla.gov.bd/",
+    
+  },
   // Add more projects here
 ];
 
